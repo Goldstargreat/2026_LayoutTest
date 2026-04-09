@@ -52,8 +52,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightof="@+id/base"
-        android:layout_above="@+id/base"
+        android:layout_toRightOf="@id/base"
+        android:layout_alignBottom="@+id/base"
         android:text="7번" />
 
 </RelativeLayout>
