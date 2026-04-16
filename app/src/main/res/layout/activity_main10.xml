@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- 전화번호 텍스트(기준점) -->
+    <TextView
+        android:id="@+id/txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화번호"/>
+
+    <!-- 전화번호 입력창 -->
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtPhone"
+        android:layout_alignBaseline="@id/txtPhone"
+        android:layout_marginLeft="8dp"
+        android:hint="000-0000-0000"
+        android:inputType="phone"/>
+
+    <!-- 입력 버튼 -->
+    <Button
+        android:id="@+id/btnInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="입력"
+        android:layout_below="@id/txtPhone"
+        android:layout_marginTop="10dp"/>
+
+    <!-- 취소 버튼 -->
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="취소"
+        android:layout_toRightOf="@id/btnInput"
+        android:layout_alignTop="@id/btnInput"
+        android:layout_marginLeft="8dp"/>
+
+</RelativeLayout>
