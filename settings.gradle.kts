@@ -24,3 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "LayoutTest"
 include(":app")
+include(":app")
